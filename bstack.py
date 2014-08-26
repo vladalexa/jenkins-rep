@@ -25,7 +25,7 @@ driver.maximize_window()
 # except ValueError:
 #     print "WRONG TITLE"
 sys.stdout.flush()
-print '******************'
+print '*******************'
 print driver.title
 print'******************'
 driver.quit()
