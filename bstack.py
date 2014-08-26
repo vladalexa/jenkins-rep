@@ -23,6 +23,7 @@ driver.maximize_window()
 #     assert "Advertiser list" == driver.title
 # except ValueError:
 #     print "WRONG TITLE"
-
+print '******************'
 print driver.title
+print'******************'
 driver.quit()
