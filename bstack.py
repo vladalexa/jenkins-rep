@@ -12,17 +12,17 @@ driver=webdriver.Firefox()
 
 driver.get("http://google.co.uk")
 driver.maximize_window()
-email = driver.find_element_by_name("email")
-email.send_keys("vlad@affectv.co.uk")
-password=driver.find_element_by_name("password")
-password.send_keys("affectv123")
-password.submit()
-driver.find_element_by_xpath("/html/body/nav/div[8]/a/span[1]").click()
+# email = driver.find_element_by_name("email")
+# email.send_keys("vlad@affectv.co.uk")
+# password=driver.find_element_by_name("password")
+# password.send_keys("affectv123")
+# password.submit()
+# driver.find_element_by_xpath("/html/body/nav/div[8]/a/span[1]").click()
 
-try:
-    assert "Advertiser list" == driver.title
-except ValueError:
-    print "WRONG TITLE"
+# try:
+#     assert "Advertiser list" == driver.title
+# except ValueError:
+#     print "WRONG TITLE"
 
 print driver.title
 driver.quit()
