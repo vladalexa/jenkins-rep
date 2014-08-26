@@ -1,4 +1,5 @@
 import time
+import sys
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
@@ -23,6 +24,7 @@ driver.maximize_window()
 #     assert "Advertiser list" == driver.title
 # except ValueError:
 #     print "WRONG TITLE"
+sys.stdout.flush()
 print '******************'
 print driver.title
 print'******************'
